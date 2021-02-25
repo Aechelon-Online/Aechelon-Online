@@ -1,0 +1,428 @@
+/* Aechelon Coding Services Website CSS */
+
+
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    margin: 0;
+}
+.header-wrapper{
+    background-color: #992c35;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+.half-width-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 90%;
+
+}
+
+header img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+header h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    margin-left: 0;
+    color: #ffffff;
+}
+header nav {
+  width: 100%;
+  margin-left: 0;
+}
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+nav ul li a {
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #ffffff;
+}
+.full-width img {
+    width: 100%;
+    height: auto;
+}
+#greeting {
+    height: 600px;
+    background: url('../img/bubble-background-image.png');
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+
+}
+#quote {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+
+}
+#quote h1 {
+    color: #ffffff;
+    width: 50%;
+    margin: 0;
+    font-family: 'Source Code Pro';
+    font-size: 40px;
+}
+#quote h1 span {
+    color: #cb7752;
+}
+#portfolio {
+    background: #34193a;
+    color: #ffffff;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+
+}
+.portfolio-wrapper {
+    width: 90%;
+}
+
+
+#portfolio h4 {
+    margin-top: 10px;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+#portfolio h4 span {
+    font-size: 16px;
+}
+
+#portfolio p {
+    max-width: 100%;
+    font-size: 14px;
+    padding: 0px 12%;
+    margin-bottom: 40px;
+}
+
+figure {
+  margin: 0;
+}
+
+.top {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+
+.middle {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column-reverse;
+}
+
+.bottom {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+}
+
+#about {
+    background: #6dcb99;
+    color: #ffffff;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+.about-wrapper {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column-reverse;
+}
+
+#about h2 {
+  margin: 0;
+  padding: 20px 0;
+}
+#about p {
+  width: 100%;
+  margin-top: 20px;
+  text-align: justify;
+}
+
+.contact-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+#contact {
+    background: #34193a;
+    color: #ffffff;
+    text-align: center;
+    width: 100%;
+}
+#contact h2 {
+  margin: 0;
+  padding-top: 10px;
+}
+.third-width {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    width: 90%;
+    height: auto;
+    padding: 20px 0;
+}
+#links ol {
+    width: 60%;
+    padding: 0;
+    margin-top: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+}
+#links ol li {
+    display: flex;
+}
+
+#links h3 {
+
+    margin-top: 0;
+}
+#links img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+}
+
+#dfw-map h3 {
+    margin-top: 0;
+}
+footer {
+    text-align: center;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+#cell-email a {
+    text-decoration: none;
+    color: #ffffff;
+}
+#cell-eamil h3 {
+    margin-top: 0px;
+}
+#contact p {
+  margin-top: 0;
+
+}
+#contact a{
+  width: 100%;
+}
+
+
+@media only screen and (min-width: 768px) {
+
+header img {
+      width: 40px;
+      height: 40px;
+      margin-left: 0;
+  }
+
+header h1 {
+      font-size: 18px;
+      margin-left: 0;
+  }
+
+header nav {
+      width: 90%;
+      margin-left: 0;
+  }
+
+nav ul li a {
+      font-size: 14px;
+  }
+.header-wrapper {
+    flex-flow: row wrap;
+  }
+.half-width-header {
+    width: 49%;
+  }
+
+  #quote h1 {
+    font-size: 50px;
+  }
+#portfolio {
+      flex-flow: row wrap;
+  }
+
+article div {
+      width: 49%;
+  }
+
+figure {
+    width: 45%;
+  }
+.portfolio-wrapper {
+      width: 90%;
+      justify-content: center;
+      align-items: center;
+      flex-flow: row wrap;
+  }
+
+.portfolio-wrapper article {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+
+article div {
+    width: 45%;
+  }
+
+.full-width {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-flow: row wrap;
+  }
+
+#portfolio h2 {
+    width: 100%;
+    font-size: 28px;
+  }
+#portfolio h4 {
+      font-size: 28px;
+      line-height: 20px;
+  }
+#portfolio h4 span {
+      font-size: 22px;
+  }
+#portfolio p {
+      margin-top: 20px;
+      padding: 0;
+      font-size: 18px;
+  }
+
+#about {
+      background: #6dcb99;
+      color: #ffffff;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: row wrap;
+  }
+.about-wrapper figure {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+  }
+.about-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding-bottom: 50px;
+
+  }
+#about h2 {
+    margin: 0;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.about-wrapper div {
+    width: 60%;
+    padding-left: 5%;
+  }
+
+.contact-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+#contact {
+      background: #34193a;
+      color: #ffffff;
+      text-align: center;
+      width: 100%;
+  }
+#contact h2 {
+    margin: 0;
+    padding-top: 10px;
+  }
+.third-width {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column nowrap;
+      width: 30%;
+      height: auto;
+      padding: 20px 0;
+  }
+#links ol {
+      width: 100%;
+      padding: 0;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-flow: row wrap;
+  }
+
+#cell-email h3 {
+      margin-top: 0;
+  }
+}
+@media only screen and (min-width: 1200px) {
+
+header img {
+      width: 50px;
+      height: 50px;
+      margin-left: 0;
+  }
+
+header h1 {
+      font-size: 24px;
+      margin-left: 0;
+  }
+nav ul li a {
+      font-size: 20px;
+  }
+  #quote h1 {
+    font-size: 60px;
+  }
+}
