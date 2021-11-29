@@ -7,7 +7,7 @@ body {
     margin: 0;
 }
 .header-wrapper{
-    background-color: #992c35;
+    background-color: #cb7752;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,11 +37,13 @@ header h1 {
 }
 header nav {
   width: 100%;
-  margin-left: 0;
+  margin: 0;
+  margin-bottom: 10px;
 }
 header nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -57,8 +59,8 @@ nav ul li a {
     height: auto;
 }
 #greeting {
-    height: 600px;
-    background: url('../img/bubble-background-image.png');
+    height: 400px;
+    background: url('../img/tom-podmore-roof.jpg');
     background-size: cover;
     background-position: top;
     display: flex;
@@ -130,7 +132,7 @@ figure {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: column wrap;
+  flex-flow: column nowrap;
 }
 
 .middle {
@@ -138,7 +140,7 @@ figure {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column-reverse;
+  flex-flow: column;
 }
 
 .bottom {
@@ -146,7 +148,7 @@ figure {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: column nowrap;
+  flex-flow: column-reverse;
 }
 
 #about {
@@ -234,7 +236,7 @@ footer {
     padding-bottom: 0;
 }
 #cell-email a {
-    text-decoration: none;
+    text-decoration: underline;
     color: #ffffff;
 }
 #cell-eamil h3 {
@@ -265,40 +267,45 @@ header h1 {
 header nav {
       width: 90%;
       margin-left: 0;
+      margin-bottom: 0;
   }
 
 nav ul li a {
       font-size: 14px;
   }
-.header-wrapper {
-    flex-flow: row wrap;
-  }
+
+#greeting {
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+}
+
+
 .half-width-header {
     width: 49%;
   }
 
-  #quote h1 {
+#quote h1 {
     font-size: 50px;
+    color: #ffffff;
+    text-shadow: #34193a 2px 2px;
   }
 #portfolio {
       flex-flow: row wrap;
-  }
-
-article div {
-      width: 49%;
   }
 
 figure {
     width: 45%;
   }
 .portfolio-wrapper {
-      width: 90%;
+      width: 92%;
       justify-content: center;
       align-items: center;
       flex-flow: row wrap;
   }
 
 .portfolio-wrapper article {
+    padding-bottom: 20px;
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -322,16 +329,16 @@ article div {
     font-size: 28px;
   }
 #portfolio h4 {
-      font-size: 28px;
-      line-height: 20px;
+      font-size: 24px;
+      line-height: 30px;
   }
 #portfolio h4 span {
-      font-size: 22px;
+      font-size: 18px;
   }
 #portfolio p {
       margin-top: 20px;
       padding: 0;
-      font-size: 18px;
+      font-size: 16px;
   }
 
 #about {
@@ -423,6 +430,20 @@ nav ul li a {
       font-size: 20px;
   }
   #quote h1 {
-    font-size: 60px;
+      font-size: 60px;
+      color: #fff;
+      text-shadow: #34193a 2px 2px;
   }
+  #portfolio h4 {
+      font-size: 28px;
+      line-height: 30px;
+    }
+  #portfolio h4 span {
+      font-size: 22px;
+    }
+  #portfolio p {
+      margin-top: 20px;
+      padding: 0;
+      font-size: 18px;
+    }
 }
