@@ -59,22 +59,35 @@ nav ul li a {
     height: auto;
 }
 #greeting {
+    position: relative;
     height: 400px;
-    background: url('../img/tom-podmore-roof.jpg');
+    background-image: url('../img/tom-podmore-roof.jpg');
     background-size: cover;
     background-position: top;
+    opacity: 1;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-
-
 }
+
+.layer {
+  background: linear-gradient(rgba(255, 115, 0, 0.651), rgba(153, 0, 255, 0.233));
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 #quote {
+    position: absolute;
     width: 60%;
+    top: 25%;
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-flow: row wrap;
+    z-index: 10;
+    text-shadow: #34193a 2px 2px;
 
 }
 #quote h1 {
@@ -231,7 +244,10 @@ figure {
     margin-top: 0;
 }
 footer {
-    text-align: center;
+    background: #34193a;
+    display: flex;
+    color: white;
+    justify-content: center;
     margin-bottom: 0;
     padding-bottom: 0;
 }
