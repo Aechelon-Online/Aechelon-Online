@@ -6,8 +6,15 @@ body {
     font-family: 'Red Hat Display', sans-serif;
     margin: 0;
 }
+.wrapper {
+  height: 100vh;
+  overflow-y: auto;
+  perspective: 10px;
+}
 .header-wrapper{
     background: linear-gradient(#c0643c, #cb7752);
+    width: 100vw;
+    padding-top: 2vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,8 +22,8 @@ body {
 }
 
 .ae-logo {
-    width: clamp(2rem, 5vw, 5rem);
-    height: clamp(2rem, 5vw, 5rem);
+    width: clamp(3rem, 6vw, 6rem);
+    height: clamp(3rem, 6vw, 6rem);
     margin-right: 1vw;
     transform: translateX(-20vw);
     opacity: 0;
@@ -28,6 +35,8 @@ body {
     justify-content: center;
     align-items: center;
     font-size: clamp(1rem, 2.5vw, 4rem);
+    font-family: 'Roboto';
+    letter-spacing: 0.09em;
     margin-left: 0;
     color: #ffffff;
     transform: translateX(20vw);
@@ -46,7 +55,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-    width: clamp(20rem, 90vw, 50rem);
+    width: clamp(30rem, 70vw, 60rem);
     padding-bottom: 1vw;
 }
 
@@ -65,12 +74,18 @@ header nav ul {
     align-items: center;
     width: 100%;
 }
-nav ul li a {
+.nav-links {
     text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-decoration: none;
     font-size: clamp(1rem, 2vw, 2rem);
+    font-family: 'Source Code Pro';
     opacity: 0;
     color: #ffffff;
     animation: navFadeIn 0.5s ease-in 1s forwards;
+}
+.nav-links:hover {
+  color:rgb(204, 255, 146);
 }
 
 @keyframes navFadeIn {
@@ -84,9 +99,10 @@ nav ul li a {
     position: relative;
     height: 600px;
     background-image: url('../img/anatomy-website.jpg');
-    background-size: fill;
+    background-size: cover;
     background-position: top;
     transform: translateY(0vw);
+    transform-style: preserve-3d;
     opacity: 1;
     display: flex;
     justify-content: flex-start;
@@ -94,7 +110,7 @@ nav ul li a {
 }
 
 .layer {
-  background: linear-gradient(to bottom, #cb7752ff 0%, transparent 20%, rgb(52, 25, 58) 90%);
+  background: linear-gradient(to bottom, #cb7752ff 0%, transparent 20%, rgb(52, 25, 58) 95%);
   position: absolute;
   top: 0;
   left: 0;
@@ -141,6 +157,10 @@ nav ul li a {
 
 h2 {
   font-size: clamp(1rem, 5vw, 2.5rem);
+  letter-spacing: 0.5vw;
+}
+h4 {
+  letter-spacing: 0.2vw;
 }
 
 #portfolio {
@@ -149,7 +169,7 @@ h2 {
     width: 100%;
     height: auto;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 0px;
     padding-bottom: 20px;
     display: flex;
     justify-content: center;
@@ -287,7 +307,7 @@ figure {
     padding: 20px 0;
 }
 #links ol {
-    width: 60%;
+    width: 40%;
     padding: 0;
     margin-top: 0;
     display: flex;
@@ -300,7 +320,6 @@ figure {
 }
 
 #links h3 {
-
     margin-top: 0;
 }
 #links img {
@@ -322,14 +341,16 @@ footer {
     padding-bottom: 0;
 }
 #cell-email a {
-    text-decoration: underline;
+    text-decoration: none;
     color: #ffffff;
+    font-size: clamp(0.5rem, 4vw, 1.5rem);
 }
-#cell-eamil h3 {
+#cell-email h3 {
     margin-top: 0px;
 }
 #contact p {
   margin-top: 0;
+  margin-bottom: 2vw;
 
 }
 #contact a{
@@ -475,7 +496,7 @@ article div {
       padding: 20px 0;
   }
 #links ol {
-      width: 100%;
+      width: 60%;
       padding: 0;
       display: flex;
       justify-content: space-around;
